@@ -24,10 +24,10 @@
 </head>
 
 <body>
-  <header>
-    <div class="navbar bg-base-100">
-      <div class="navbar-start w-full lg:w-2/3 ">
-        <div class="dropdown">
+  <header class="w-full">
+    <div class="navbar bg-base-100 container mx-auto py-5 px-2 lg:px-0">
+      <div class="navbar-start w-full lg:w-2/3 pl-2 ">
+        <div class="dropdown ml-[-10px]">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
@@ -42,7 +42,7 @@
             <li class="cursor-pointer"><a>Search</a></li>
           </ul>
         </div>
-        <a class="p-5 text-2xl lg:text-4xl font-extrabold text-[#030712] cursor-pointer">Green Line</a>
+        <a class="text-2xl lg:text-4xl font-extrabold text-[#030712] cursor-pointer">Green Line</a>
       </div>
       <div class="navbar-center hidden lg:flex ">
         <ul class=" menu-horizontal px-1 text-[#030712] text-lg font-medium space-x-8 mr-56 pt-3">
@@ -58,7 +58,30 @@
       </div>
     </div>
   </header>
-  <main></main>
+  <main class="w-full font-raleway">
+    <!-- Hero Section -->
+    <section class="container mx-auto rounded-xl mb-10 p-3 lg:p-0">
+
+      <div class="hero min-h-screen rounded-xl " style="background-image: url('images/banner.png');">
+        <div class="hero-overlay rounded-xl"></div>
+        <div class="hero-content text-neutral-content text-center">
+          <div class="max-w-max">
+            <h1 class=" mb-3 lg:mb-5 text-3xl lg:text-6xl font-extrabold text-white">End-to-End Travel with <br><span
+                class="text-[#1DD100]">Green
+                Line
+                Paribahan</span> </h1>
+            <p class="mb-5 text-white">
+              Yes, you can run unit tests and view the results directly within the app. <br>The integrated testing
+              features allow for a
+              streamlined .
+            </p>
+            <button class="btn bg-[#1DD100] text-[#030712] border-none px-6 py-4 w-40 h-12 text-lg">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
   <footer class="flex flex-col gap-5 bg-neutral ">
     <div class="flex flex-col gap-5 px-3 lg:px-8 py-5">
       <div class="flex flex-col lg:flex-row justify-between gap-7">
