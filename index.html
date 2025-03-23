@@ -24,8 +24,8 @@
 </head>
 
 <body>
-  <header class="w-full">
-    <div class="navbar bg-base-100 container mx-auto py-5 px-2 lg:px-0">
+  <header class="w-full bg-[#f7f8f8]">
+    <div class="navbar bg-[#f7f8f8] container mx-auto py-5 px-2 lg:px-0">
       <div class="navbar-start w-full lg:w-2/3 pl-2 ">
         <div class="dropdown ml-[-10px]">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -83,7 +83,7 @@
     </section>
     <!-- Staticstics section -->
     <section
-      class="w-full p-5 lg:p-0 lg:w-[880px] mx-auto flex flex-col lg:flex-row justify-between gap-6 mb-16 mt-[-50px]">
+      class="w-full p-5 lg:p-0 lg:w-[880px] mx-auto flex flex-col lg:flex-row justify-between gap-6 mb-16 lg:mt-[-100px] -m-[50px]">
       <!-- card one -->
       <div class="flex flex-1 bg-white gap-2 justify-center border-b-[3px] border-[#1DD100] rounded-3xl px-3 py-5">
         <img class="w-16" src="images/people.png" alt="">
@@ -160,7 +160,8 @@
     </section>
 
     <!-- Status section -->
-    <section class="flex flex-col gap-6 py-8 border-t-2 border-[#1DD100] rounded-4xl bg-[#F7F8F899] font-[inter]">
+    <section
+      class="flex flex-col gap-6 py-7 border-t-2 border-[#1DD100] rounded-t-xl rounded-r-xl bg-[#F7F8F899] font-[inter]">
 
       <div class="flex flex-col gap-4 text-center justify-center font-[raleway]">
         <h2 class="text-black text-3xl lg:text-4xl font-bold">P.H Paribahan</h2>
@@ -212,6 +213,24 @@
           <h3 class="text-3xl text-black font-bold">550 Taka</h3>
           <p class="text-lg font-[inter] text-[#03071299]">Per seat</p>
         </div>
+      </div>
+    </section>
+
+    <!-- Seat selection section -->
+    <section class="flex flex-col lg:flex-row bg-[#f7f8f899] ">
+      <div class=" container mx-auto flex flex-col lg:flex-row gap-3 rounded-3xl font-[raleway] p-7">
+        <div class="flex flex-col flex-1">
+          <h3 class=" text-3xl text-black fomt-extrabold py-3 border-[#0307124d]  border-b-2 border-dashed ">
+            Select
+            Your
+            Seat
+          </h3>
+          <div class="flex"><span class="py-4 px-6 text-lg text-[#03071280] font-[inter]"><img
+                class="inline w-[20px] h-[20px]" src="images/seat-gray.png" alt="">
+              Available</span></div>
+        </div>
+        <div class="flex flex-col"></div>
+
       </div>
     </section>
   </main>
