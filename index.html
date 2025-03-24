@@ -217,19 +217,57 @@
     </section>
 
     <!-- Seat selection section -->
-    <section class="flex flex-col lg:flex-row bg-[#f7f8f899] ">
-      <div class=" container mx-auto flex flex-col lg:flex-row gap-3 rounded-3xl font-[raleway] p-7">
-        <div class="flex flex-col flex-1">
-          <h3 class=" text-3xl text-black fomt-extrabold py-3 border-[#0307124d]  border-b-2 border-dashed ">
+    <section class="flex flex-col lg:flex-row bg-[#f7f8f899] pb-8">
+      <div class=" container mx-auto flex flex-col bg-white lg:flex-row gap-3 rounded-3xl font-[raleway] p-7">
+        <div class="flex flex-col flex-1 basis-2/3 border-r-2 border-dashed border-[#0307124d] pr-7">
+          <h3 class=" text-3xl text-black font-semibold py-3 border-[#0307124d]  border-b-2 border-dashed ">
             Select
             Your
             Seat
           </h3>
-          <div class="flex"><span class="py-4 px-6 text-lg text-[#03071280] font-[inter]"><img
-                class="inline w-[20px] h-[20px]" src="images/seat-gray.png" alt="">
-              Available</span></div>
+          <div class="flex justify-between border-b-2 border-[#0307124d] border-dashed ">
+            <span class="py-5 text-lg text-[#03071280] font-[inter] border-b-2 border-b-[#f7f8f899]"><img
+                class="inline w-[24px] h-[24px]" src="images/seat-gray.png" alt="">
+              Available</span>
+            <span class="py-5 text-lg text-[#1DD100] font-[inter] border-b-2 border-b-[#f7f8f899]"><img
+                class="inline w-[24px] h-[24px]" src="images/seat-green-filled.png" alt="">
+              Selected</span>
+          </div>
+          <!-- Driver Seat -->
+          <div class="flex justify-end mt-10"><button
+              class="w-[110px] h-[56px] bg-[#0307121a] rounded-xl justify-items-center"><img class=""
+                src="images/Vector (2).png" alt=""></button></div>
+
+
+          <!--All Seat Section -->
+          <div class="flex flex-col gap-7 mt-4 font-[inter]">
+
+            <!-- A serial seat -->
+            <div class="flex justify-between items-center gap-6">
+              <div class="flex gap-6 items-center"><span>A</span> <button
+                  class="w-[110px] h-[56px] bg-[#0307121a] rounded-xl justify-items-center">A1</button>
+                <button class="w-[110px] h-[56px] bg-[#0307121a] rounded-xl justify-items-center">A2</button>
+              </div>
+
+              <div class="flex gap-6 items-center">
+                <button class="w-[110px] h-[56px] bg-[#0307121a] rounded-xl justify-items-center">A3</button>
+                <button class="w-[110px] h-[56px] bg-[#0307121a] rounded-xl justify-items-center">A4</button>
+              </div>
+
+            </div>
+
+          </div>
         </div>
-        <div class="flex flex-col"></div>
+
+        <div class="flex flex-col basis-1/3 pl-5 ">
+          <h3 class=" text-3xl text-black font-semibold py-3 border-[#0307124d]  border-b-2 border-dashed ">
+            Select
+            Your
+            Seat
+          </h3>
+        </div>
+      </div>
+
 
       </div>
     </section>
