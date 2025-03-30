@@ -446,29 +446,29 @@
           </h3>
           <!-- selected seat are appears here -->
           <div class="flex flex-col gap-4 bg-[#f7f8f8] rounded-xl p-3 pb-5">
-            <table class="w-full text-center lg:text-left">
+            <table class="w-full text-center lg:text-left lg:p-2">
               <tr class="pb-4 border-b-[#03071233] border-b mb-3 border-collapse border-dashed h-12 ">
                 <th class="">Seats<span id="selectedSeatNumber"
                     class="bg-[#1dd100] text-white px-2 rounded-sm ml-2">0</span></th>
                 <th>Class</th>
-                <th>Price</th>
+                <th class="lg:text-right">Price</th>
               </tr>
               <tr class="space-x-1 lg:space-x-4 h-12">
                 <td id="getSeatNumber">C2</td>
                 <td id="seatClass">Economy</td>
-                <td id="seatPrice">550<span>TK</span></td>
+                <td class="lg:text-right lg:p-2" id="seatPrice">550<span>TK</span></td>
 
               </tr>
               <tr class=" space-x-1 lg:space-x-4 h-12">
                 <td id="getSeatNumber">C2</td>
                 <td id="seatClass">Economy</td>
-                <td id="seatPrice">550<span>TK</span></td>
+                <td class="lg:text-right lg:p-2" id="seatPrice">550<span>TK</span></td>
 
               </tr>
               <tr class=" space-x-1 lg:space-x-4 h-12 pt-4 border-dashed border-t border-[#03071233]">
                 <th>Total Price</th>
                 <th></th>
-                <th>BDT <span id="totalPrice">1100</span></th>
+                <th class="lg:text-right lg:p-2">BDT <span id="totalPrice">1100</span></th>
               </tr>
             </table>
             <!-- Coupon code apply section -->
@@ -483,6 +483,29 @@
               <p class="text-base font-bold">BDT <span id="grandTotal">1100</span></p>
 
             </div>
+          </div>
+          <!-- User form input field -->
+          <div class="flex flex-col gap-3">
+            <!-- Passenger Name -->
+            <div class="flex flex-col gap-2">
+              <label class="text-base font-bold " for="passenger name">Passenger name*</label>
+              <input class="h-14 rounded-xl border-[#0307121a] border px-3 py-5" type="text"
+                placeholder="Enter your name" required>
+            </div>
+            <!-- Passenger Phone -->
+            <div class="flex flex-col gap-2">
+              <label class="text-base font-bold " for="passenger Phone">Passenger phone*</label>
+              <input class="h-14 rounded-xl border-[#0307121a] border px-3 py-5" type="tel" placeholder="017xxxxxxxx"
+                required>
+            </div>
+            <!-- passenger email -->
+            <div class="flex flex-col gap-2">
+              <label class="text-base font-bold " for="passenger email">Email ID*</label>
+              <input class="h-14 rounded-xl border-[#0307121a] border px-3 py-5" type="email"
+                placeholder="Enter your email" required>
+            </div>
+
+            <button class="bg-[#1DD100] px-5 py-4 text-white cursor-pointer font-bold rounded-xl">Next</button>
           </div>
         </div>
       </div>
