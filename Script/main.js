@@ -14,7 +14,7 @@ const couponApplyBtn = document.getElementById('couponApplyBtn');
 
 
 //Main seat selecting functionality
-const selectedSeats = [];
+let selectedSeats = [];
 for (let i = 0; i < seats.length; i++){
   seats[i].addEventListener('click', function () {
     const seatId = this.id;
@@ -56,7 +56,8 @@ for (let i = 0; i < seats.length; i++){
         }
 
         // Price grand total
-
+     
+ 
 
         couponApplyBtn.addEventListener('click', function () {
  
@@ -92,16 +93,19 @@ for (let i = 0; i < seats.length; i++){
           }
          else {
             setInnerTextById('grandTotal', totalPriceUpdate);
-         } 
-});
+          }
+          
+        });
 
+      
       }
+      
       
       else {
         alert('You can select only 4 seat maximum');
       }
     }
-
+   
    //if button or seat Already selected
     else {
       selectedSeats.splice(index, 1);
@@ -125,3 +129,19 @@ for (let i = 0; i < seats.length; i++){
   
 }
 
+const inputPhone = document.getElementById('inputPhone');
+    
+
+        inputPhone.addEventListener('keyup', function () {
+          const getInputPhone = inputPhone.value.trim();
+          console.log(getInputPhone.length);
+          if (selectedSeats.length>=1 && getInputPhone.length ===11 ) {
+            const nextBtn = document.getElementById('nextBtn');
+            nextBtn.classList.remove('pointer-events-none');
+       
+          }
+         else {
+            nextBtn.classList.add('pointer-events-none'); 
+            
+          }
+        });

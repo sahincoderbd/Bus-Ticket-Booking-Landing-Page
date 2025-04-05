@@ -490,30 +490,32 @@
             </div>
           </div>
           <!-- User form input field -->
-          <div class="flex flex-col gap-3">
-            <!-- Passenger Name -->
-            <div class="flex flex-col gap-2">
-              <label class="text-base font-bold " for="passenger name">Passenger name*</label>
-              <input class="h-14 rounded-xl border-[#0307121a] border px-3 py-5" type="text"
-                placeholder="Enter your name" required>
-            </div>
-            <!-- Passenger Phone -->
-            <div class="flex flex-col gap-2">
-              <label class="text-base font-bold " for="passenger Phone">Passenger phone*</label>
-              <input class="h-14 rounded-xl border-[#0307121a] border px-3 py-5" type="tel" placeholder="017xxxxxxxx"
-                required>
-            </div>
-            <!-- passenger email -->
-            <div class="flex flex-col gap-2">
-              <label class="text-base font-bold " for="passenger email">Email ID*</label>
-              <input class="h-14 rounded-xl border-[#0307121a] border px-3 py-5" type="email"
-                placeholder="Enter your email" required>
-            </div>
+          <form action="">
+            <div class="flex flex-col gap-3">
+              <!-- Passenger Name -->
+              <div class="flex flex-col gap-2">
+                <label class="text-base font-bold " for="passenger name">Passenger name*</label>
+                <input class="h-14 rounded-xl border-[#0307121a] border px-3 py-5" type="text"
+                  placeholder="Enter your name">
+              </div>
+              <!-- Passenger Phone -->
+              <div class="flex flex-col gap-2">
+                <label class="text-base font-bold " for="passenger Phone">Passenger phone*</label>
+                <input id="inputPhone" class="h-14 rounded-xl border-[#0307121a] border px-3 py-5" type="tel"
+                  placeholder="017xxxxxxxx" required>
+              </div>
+              <!-- passenger email -->
+              <div class="flex flex-col gap-2">
+                <label class="text-base font-bold " for="passenger email">Email ID*</label>
+                <input class="h-14 rounded-xl border-[#0307121a] border px-3 py-5" type="email"
+                  placeholder="Enter your email" required>
+              </div>
 
-            <a href="successPage.html" class="w-full"><button
-                class="w-full bg-[#1DD100] px-5 py-4 text-white cursor-pointer font-bold rounded-xl">Next</button></a>
-          </div>
+              <a id="nextBtn" href="successPage.html" class="w-full pointer-events-none"><button
+                  class="w-full bg-[#1DD100] px-5 py-4 text-white cursor-pointer font-bold rounded-xl">Next</button></a>
+            </div>
         </div>
+        </form>
       </div>
 
 
