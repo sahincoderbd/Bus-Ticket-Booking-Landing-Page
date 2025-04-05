@@ -58,7 +58,7 @@
       </div>
     </div>
   </header>
-  <main class="w-full font-[inter] bg-white">
+  <main id="main" class="w-full font-[inter] bg-white">
     <!-- Hero Section -->
     <section class="container mx-auto rounded-xl mb-10 p-3 lg:p-0">
 
@@ -511,7 +511,7 @@
                   placeholder="Enter your email">
               </div>
 
-              <a id="nextBtn" href="successPage.html" class="w-full pointer-events-none"><button
+              <a id="nextBtn" class="w-full pointer-events-none"><button
                   class="w-full bg-[#1DD100] px-5 py-4 text-white cursor-pointer font-bold rounded-xl">Next</button></a>
             </div>
         </div>
@@ -521,7 +521,21 @@
 
       </div>
     </section>
+
   </main>
+  <!-- Success Modal section -->
+  <section id="modal" class="bg-[#F2F1F1] min-h-screen p-4 flex flex-col justify-center items-center hidden">
+    <div
+      class="py-5 px-4 text-center justify-center items-center w-full lg:w-[500px] flex flex-col gap-3 mx-auto bg-white rounded-2xl">
+
+      <img src="images/success.png" alt="">
+      <h3 class="text-2xl text-[#27AE60] font-bold">SUCCESS</h3>
+      <p class="font-medium text-sm">Thank you for Booking Our Bus Seats.<br>
+        We are working hard to find the best service and deals for you.</p>
+      <p class="">Shortly you will find a confirmation in your email.</p>
+      <button class="text-white bg-[#27AE60] rounded-full px-6 py-2 cursor-pointer">Continue</button>
+    </div>
+  </section>
   <footer class="flex flex-col gap-5 bg-neutral ">
     <div class="flex flex-col gap-5 px-3 lg:px-8 py-5">
       <div class="flex flex-col lg:flex-row justify-between gap-7">

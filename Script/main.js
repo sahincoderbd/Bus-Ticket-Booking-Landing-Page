@@ -137,7 +137,14 @@ const inputPhone = document.getElementById('inputPhone');
           console.log(getInputPhone.length);
           if (selectedSeats.length>=1 && getInputPhone.length ===11 ) {
             const nextBtn = document.getElementById('nextBtn');
+            
             nextBtn.classList.remove('pointer-events-none');
+            nextBtn.addEventListener('click', function () {
+  const main = document.getElementById('main');
+            const modal = document.getElementById('modal');
+            main.style.display = 'none';
+            modal.classList.remove('hidden');
+})
        
           }
          else {
