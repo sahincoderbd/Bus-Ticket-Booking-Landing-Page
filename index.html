@@ -24,8 +24,8 @@
 </head>
 
 <body>
-  <header class="w-full bg-[#f7f8f8]">
-    <div class="navbar bg-[#f7f8f8] container mx-auto py-5 px-2 lg:px-0">
+  <header class="w-full ">
+    <div class="navbar bg-white container mx-auto py-5 px-2 lg:px-0">
       <div class="navbar-start w-full lg:w-2/3 pl-2 ">
         <div class="dropdown ml-[-10px]">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -75,8 +75,10 @@
               features allow for a
               streamlined .
             </p>
-            <button class="btn bg-[#1DD100] text-[#030712] border-none px-6 py-4 w-40 h-12 text-lg">Buy
-              Tickets</button>
+
+            <a class="" href="#seats"><button
+                class="btn bg-[#1DD100] text-[#030712] border-none px-4 py-3 w-40 h-12 text-lg">Buy
+                Tickets</button></a>
           </div>
         </div>
       </div>
@@ -117,7 +119,7 @@
 
         <!-- Card one -->
         <div class="bg-[#FFBF0F] h-52 flex-1 flex justify-between items-center gap-6 rounded-3xl ">
-          <div class="flex-col basis-1/2 lg:basis-[55%] gap-2 pl-4 lg:p-8 flex-1">
+          <div class="flex-col basis-1/2 lg:basis-[55%] gap-2 pl-3 lg:p-8 flex-1">
             <h3 class="text-3xl lg:text-4xl font-black">15% OFF</h3>
             <p class="text-base text-[#030712]">on your next purchase</p>
             <p class="text-base text-[#03071280]">use by January 2024</p>
@@ -135,7 +137,7 @@
         </div>
         <!-- Card two -->
         <div class="bg-[#F78C9C] h-52 flex-1 flex justify-between items-center gap-6 rounded-3xl ">
-          <div class="flex-col basis-1/2 lg:basis-[55%] gap-2 pl-4 lg:p-8 flex-1">
+          <div class="flex-col basis-1/2 lg:basis-[55%] gap-1 pl-3 lg:p-8 flex-1">
             <h3 class="text-3xl lg:text-4xl font-black">20% OFF</h3>
             <p class="text-base text-[#030712]">on your next purchase</p>
             <p class="text-base text-[#03071280]">use by January 2024</p>
@@ -160,7 +162,7 @@
     </section>
 
     <!-- Status section -->
-    <section
+    <section id="status"
       class="flex flex-col gap-6 py-7 border-t-2 border-[#1DD100] rounded-t-xl rounded-r-xl bg-[#F7F8F8] font-[inter]">
 
       <div class="flex flex-col gap-4 text-center justify-center font-[raleway]">
@@ -187,9 +189,9 @@
                 </div>
               </div>
               <!-- Availble Seat display -->
-              <button class="btn bg-[#1DD10026] border-[#1DD100] rounded-lg font-[inter]"><img
-                  src="images/seat-green.png" alt=""><span id="seatLeft">40</span>
-                Seats left</button>
+              <a href="#seats"><button class="btn bg-[#1DD10026] border-[#1DD100] rounded-lg font-[inter]"><img
+                    src="images/seat-green.png" alt=""><span id="seatLeft">40</span>
+                  Seats left</button></a>
             </div>
             <div class="flex flex-col gap-4 bg-[#F7F8F8] rounded-3xl p-3 lg:p-6">
               <div class="flex justify-between border-b py-3 border-dashed border-[#03071233]"><span>Route</span>
@@ -218,7 +220,7 @@
     </section>
 
     <!-- Seat selection section -->
-    <section class="flex flex-col lg:flex-row bg-[#f7f8f8] pb-8 overflow-hidden">
+    <section id="seats" class="flex flex-col lg:flex-row bg-[#f7f8f8] pb-8 overflow-hidden">
       <div class=" container mx-auto flex flex-col bg-white lg:flex-row gap-3 rounded-3xl font-[raleway] p-3 lg:p-7">
         <div class="flex flex-col flex-1 basis-2/3 border:none lg:border-r border-dashed border-[#0307124d] lg:pr-7">
           <h3 class=" text-3xl text-black font-semibold py-3 border-[#0307124d]  border-b border-dashed ">
@@ -471,8 +473,7 @@
 
             </div>
             <!-- Coupon code apply section -->
-            <div id="coupon"
-              class="bg-white p-3 rounded-xl flex flex-row gap-4 justify-between text-center items-center hidden">
+            <div id="coupon" class="bg-white p-3 rounded-xl flex gap-4 justify-between text-center items-center hidden">
               <input id="couponInput" class="h-full border-none outline-none basis-3/4" type="text"
                 placeholder="Have any coupon?">
               <button id="couponApplyBtn" class="bg-[#1dd100] rounded-md px-5 py-2 text-white cursor-pointer font-medium basis-1/4 sm:mr-1 md:mr-1 lg:m-0

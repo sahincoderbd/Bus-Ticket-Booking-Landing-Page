@@ -51,7 +51,9 @@ for (let i = 0; i < seats.length; i++){
         setInnerTextById('grandTotal', totalPriceUpdate);
 
         // Show the coupon section
-        coupon.classList.remove('hidden');
+        if (totalPriceUpdate >= 1650 || selectedSeats.length >= 3) {
+          coupon.classList.remove('hidden');
+        }
 
 
         // Price grand total
@@ -60,26 +62,29 @@ for (let i = 0; i < seats.length; i++){
           // discount for new15
        const grandtotaldiscount15 = totalPriceUpdate * (15/100);
           const grandTotalUpdate15 = totalPriceUpdate - grandtotaldiscount15;
-          console.log('grandTotalupdate',grandTotalUpdate15);
+          
           // discount for couple20
            const grandtotaldiscount20 = totalPriceUpdate * (20/100);
           const grandTotalUpdate20 = totalPriceUpdate - grandtotaldiscount20;
           const input = couponInput.value;
           console.log('user input', input);
-          
-          if (input === 'NEW15') {
+          if (totalPriceUpdate >=1650 || selectedSeats.length>= 3 ) {
+
+            if (input === 'NEW15') {
         setInnerTextById('grandTotal', grandTotalUpdate15);
         coupon.classList.add('hidden');
         
           }
           else if (input === 'Couple20') {
             setInnerTextById('grandTotal', grandTotalUpdate20);
-        coupon.classList.add('hidden');
+            coupon.classList.add('hidden');
 
           }
-          else {
+          
+          }
+         else {
             setInnerTextById('grandTotal', totalPriceUpdate);
-         }
+         } 
 });
 
       }
