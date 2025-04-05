@@ -49,6 +49,7 @@ for (let i = 0; i < seats.length; i++){
         totalPriceUpdate = parseInt(totalPriceUpdate);
         setInnerTextById('totalPrice', totalPriceUpdate);
         setInnerTextById('grandTotal', totalPriceUpdate);
+    nextButton();
 
         // Show the coupon section
         if (totalPriceUpdate >= 1650 || selectedSeats.length >= 3) {
@@ -79,6 +80,8 @@ for (let i = 0; i < seats.length; i++){
               coupon.classList.add('hidden');
               afterCouponApplyText.classList.remove('hidden');
               afterCouponApplyText.innerHTML = `<b>Coupon Code applied!</b><br>You are saved <b>${grandtotaldiscount15}</b> BDT`;
+    nextButton();
+
         
           }
           else if (inputUppercase === 'COUPLE20') {
@@ -89,10 +92,13 @@ for (let i = 0; i < seats.length; i++){
             afterCouponApplyText.innerHTML = `<b>Coupon Code applied!</b><br>You are saved ${grandtotaldiscount20} BDT`;
 
           }
+    nextButton();
           
           }
          else {
             setInnerTextById('grandTotal', totalPriceUpdate);
+    nextButton();
+
           }
           
         });
@@ -115,7 +121,10 @@ for (let i = 0; i < seats.length; i++){
 
       const rowToRemove = document.getElementById(`row-${seatId}`);
       rowToRemove.remove();
+    nextButton();
+
     }
+
 // display selected seat number on the table
     const selectedSeatNumberInArray = selectedSeats.length;
     setInnerTextById('selectedSeatNumber', selectedSeatNumberInArray);
@@ -125,30 +134,7 @@ for (let i = 0; i < seats.length; i++){
     setInnerTextById('seatLeft', seatLeft);
  
   });
-  
+  nextButton();
   
 }
 
-const inputPhone = document.getElementById('inputPhone');
-    
-
-        inputPhone.addEventListener('keyup', function () {
-          const getInputPhone = inputPhone.value.trim();
-          console.log(getInputPhone.length);
-          if (selectedSeats.length>=1 && getInputPhone.length ===11 ) {
-            const nextBtn = document.getElementById('nextBtn');
-            
-            nextBtn.classList.remove('pointer-events-none');
-            nextBtn.addEventListener('click', function () {
-  const main = document.getElementById('main');
-            const modal = document.getElementById('modal');
-            main.style.display = 'none';
-            modal.classList.remove('hidden');
-})
-       
-          }
-         else {
-            nextBtn.classList.add('pointer-events-none'); 
-            
-          }
-        });
