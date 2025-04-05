@@ -55,10 +55,13 @@ for (let i = 0; i < seats.length; i++){
           coupon.classList.remove('hidden');
         }
 
-
         // Price grand total
-        couponApplyBtn.addEventListener('click', function () {
 
+
+        couponApplyBtn.addEventListener('click', function () {
+ 
+          const afterCouponApplyText = document.getElementById('afterCouponApply');
+          
           // discount for new15
        const grandtotaldiscount15 = totalPriceUpdate * (15/100);
           const grandTotalUpdate15 = totalPriceUpdate - grandtotaldiscount15;
@@ -67,17 +70,22 @@ for (let i = 0; i < seats.length; i++){
            const grandtotaldiscount20 = totalPriceUpdate * (20/100);
           const grandTotalUpdate20 = totalPriceUpdate - grandtotaldiscount20;
           const input = couponInput.value;
-          console.log('user input', input);
+          const inputUppercase = input.toUpperCase();
           if (totalPriceUpdate >=1650 || selectedSeats.length>= 3 ) {
 
-            if (input === 'NEW15') {
+            if (inputUppercase === 'NEW15') {
         setInnerTextById('grandTotal', grandTotalUpdate15);
-        coupon.classList.add('hidden');
+              coupon.classList.add('hidden');
+              afterCouponApplyText.classList.remove('hidden');
+              afterCouponApplyText.innerHTML = `<b>Coupon Code applied!</b><br>You are saved <b>${grandtotaldiscount15}</b> BDT`;
         
           }
-          else if (input === 'Couple20') {
+          else if (inputUppercase === 'COUPLE20') {
             setInnerTextById('grandTotal', grandTotalUpdate20);
-            coupon.classList.add('hidden');
+              coupon.classList.add('hidden');
+              afterCouponApplyText.classList.remove('hidden');
+              
+            afterCouponApplyText.innerHTML = `<b>Coupon Code applied!</b><br>You are saved ${grandtotaldiscount20} BDT`;
 
           }
           

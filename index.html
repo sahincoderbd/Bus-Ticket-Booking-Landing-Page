@@ -454,7 +454,7 @@
                 <tr class="pb-4 border-b-[#03071233] border-b mb-3 border-collapse border-dashed h-12 ">
                   <th class="">Seats<span id="selectedSeatNumber"
                       class="bg-[#1dd100] text-white px-2 py-1 rounded-sm ml-2">0</span></th>
-                  <th>Class</th>
+                  <th class="text-center">Class</th>
                   <th class="lg:text-right">Price</th>
                 </tr>
                 <tr id="willHideTr">
@@ -473,7 +473,10 @@
 
             </div>
             <!-- Coupon code apply section -->
+            <div class="text-center"><span id="afterCouponApply"
+                class=" px-3 py-2 border-l-2 border-[#1dd100] rounded-sm hidden"></span></div>
             <div id="coupon" class="bg-white p-3 rounded-xl flex gap-4 justify-between text-center items-center hidden">
+
               <input id="couponInput" class="h-full border-none outline-none basis-3/4" type="text"
                 placeholder="Have any coupon?">
               <button id="couponApplyBtn" class="bg-[#1dd100] rounded-md px-5 py-2 text-white cursor-pointer font-medium basis-1/4 sm:mr-1 md:mr-1 lg:m-0
@@ -507,7 +510,8 @@
                 placeholder="Enter your email" required>
             </div>
 
-            <button class="bg-[#1DD100] px-5 py-4 text-white cursor-pointer font-bold rounded-xl">Next</button>
+            <a href="successPage.html" class="w-full"><button
+                class="w-full bg-[#1DD100] px-5 py-4 text-white cursor-pointer font-bold rounded-xl">Next</button></a>
           </div>
         </div>
       </div>
